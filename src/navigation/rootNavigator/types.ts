@@ -26,6 +26,7 @@ export enum rootTabsRouteNames {
   TransactionSummary = 'TransactionSummary',
   InitialPinScreen = 'InitialPinScreen',
   OfflineScreen = 'OfflineScreen',
+  WalletScreen = 'WalletScreen',
 }
 
 export type RootTabsParamsList = {
@@ -51,4 +52,5 @@ export type RootTabsParamsList = {
     | undefined
   [rootTabsRouteNames.InitialPinScreen]: undefined
   [rootTabsRouteNames.OfflineScreen]: undefined
+  [rootTabsRouteNames.WalletScreen]: undefined
 }

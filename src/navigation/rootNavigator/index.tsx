@@ -31,6 +31,8 @@ import {
   screenOptionsWithAppHeader,
   screenOptionsWithHeader,
 } from '..'
+import { WalletNavigator } from '../walletNavigator'
+import { WalletScreen } from 'src/screens/wallet/WalletScreen'
 
 const RootTabs = createBottomTabNavigator<RootTabsParamsList>()
 
@@ -106,6 +108,10 @@ export const RootNavigationComponent = () => {
               <RootTabs.Screen
                 name={rootTabsRouteNames.Profile}
                 component={ProfileNavigator}
+              />
+              <RootTabs.Screen
+                name={rootTabsRouteNames.WalletScreen}
+                component={WalletScreen}
               />
             </RootTabs.Group>
             <RootTabs.Group

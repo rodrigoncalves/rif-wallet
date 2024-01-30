@@ -12,6 +12,7 @@ import NetworkIcon from 'src/components/icons/NetworkIcon'
 import { ScanIcon } from 'src/components/icons/ScanIcon'
 import TransactionsIcon from 'src/components/icons/TransactionsIcon'
 import UsersIcon from 'src/components/icons/UsersIcon'
+import { WalletIcon } from 'src/components/icons'
 
 const buttonWidth = 52
 
@@ -70,6 +71,13 @@ export const AppFooterMenu = ({ navigation }: BottomTabBarProps) => {
         onPress={() => navigation.navigate(rootTabsRouteNames.Contacts)}
         accessibilityLabel="contacts">
         <UsersIcon active={currentRouteName === rootTabsRouteNames.Contacts} />
+      </AppTouchable>
+
+      <AppTouchable
+        width={buttonWidth}
+        onPress={() => navigation.navigate(rootTabsRouteNames.WalletScreen)}
+        accessibilityLabel="wallet">
+        <WalletIcon />
       </AppTouchable>
     </View>
   )
