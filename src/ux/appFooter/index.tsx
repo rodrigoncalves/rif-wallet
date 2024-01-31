@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: sharedColors.black,
+    backgroundColor: sharedColors.secondary,
   }),
   walletIcon: {
     height: 20,

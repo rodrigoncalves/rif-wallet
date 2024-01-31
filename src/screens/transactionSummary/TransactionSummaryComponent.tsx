@@ -151,7 +151,7 @@ export const TransactionSummaryComponent = ({
             style={[
               styles.summaryAlignment,
               styles.statusContainer,
-              status ? { backgroundColor: sharedColors.inputInactive } : null,
+              status ? { backgroundColor: sharedColors.secondaryDark } : null,
             ]}>
             <Typography type={'h4'}>
               {status ? t('transaction_summary_status') : ''}
@@ -186,6 +186,7 @@ export const TransactionSummaryComponent = ({
                     symbol={fee.symbol || tokenValue.symbol}
                     transparent
                     size={12}
+                    color={sharedColors.secondary}
                   />
                   <Typography type={'body2'} style={[sharedStyles.textCenter]}>
                     {displayRoundBalance(Number(fee.tokenValue))} {fee.symbol}
@@ -220,7 +221,12 @@ export const TransactionSummaryComponent = ({
             </Typography>
 
             <View style={sharedStyles.row}>
-              <TokenImage symbol={tokenValue.symbol} size={12} transparent />
+              <TokenImage
+                symbol={tokenValue.symbol}
+                size={12}
+                transparent
+                color={sharedColors.secondary}
+              />
               <Typography type={'body2'} style={[sharedStyles.textCenter]}>
                 {displayRoundBalance(totalToken, tokenValue.symbol)}{' '}
                 {tokenValue.symbol}{' '}
@@ -322,7 +328,7 @@ export const TransactionSummaryComponent = ({
 const styles = StyleSheet.create({
   screen: castStyle.view({
     flex: 1,
-    backgroundColor: sharedColors.black,
+    backgroundColor: sharedColors.secondary,
     paddingHorizontal: 22,
   }),
   contentPadding: castStyle.view({ paddingBottom: 114 }),

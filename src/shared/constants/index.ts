@@ -15,8 +15,8 @@ export const testIDs = {
 }
 
 export const sharedColors = {
-  primary: '#4B5CF0',
-  secondary: '#121212',
+  primary: '#e74436',
+  secondary: '#1abcfb',
   success: '#79C600',
   successLight: '#59FF9C',
   connected: '#01CB9F',
@@ -28,7 +28,8 @@ export const sharedColors = {
   inputActive: '#3A3A3A',
   inputLabelColor: '#B8B8B8',
   borderColor: '#575757',
-  primaryDark: '#4250CC',
+  primaryDark: '#d24726',
+  secondaryDark: '#1e7af3',
   labelLight: '#B8B8B8',
   subTitle: '#FBFBFB',
   tokenBackground: '#1E1E1E',
@@ -90,7 +91,7 @@ export const sharedStyles = StyleSheet.create({
   }),
   screen: castStyle.view({
     flex: 1,
-    backgroundColor: sharedColors.black,
+    backgroundColor: sharedColors.secondary,
     paddingHorizontal: 24,
   }),
   noPadding: castStyle.view({ padding: 0 }),

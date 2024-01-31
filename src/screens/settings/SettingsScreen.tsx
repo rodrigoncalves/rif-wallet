@@ -145,7 +145,7 @@ export const SettingsScreen = ({
         accessibilityLabel="Wallet Backup"
         style={styles.settingsItem}
         onPress={onSwitchChains}>
-        <Typography type={'h3'}>
+        <Typography type={'h3'} color={sharedColors.black}>
           Switch to {ChainTypesInversed[chainTypesById[chainId]]}
         </Typography>
       </AppTouchable>
@@ -212,7 +212,7 @@ export const SettingsScreen = ({
 const styles = StyleSheet.create({
   container: castStyle.view({
     height: '100%',
-    backgroundColor: sharedColors.black,
+    backgroundColor: sharedColors.secondary,
     paddingHorizontal: 24,
   }),
   mainView: castStyle.view({

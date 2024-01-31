@@ -272,7 +272,7 @@ const StatusIcon = ({ status }: { status: StatusActions }) => {
 
 const styles = StyleSheet.create({
   parent: castStyle.view({
-    backgroundColor: sharedColors.black,
+    backgroundColor: sharedColors.secondary,
     flex: 1,
     paddingHorizontal: 24,
   }),
@@ -290,6 +290,7 @@ const styles = StyleSheet.create({
   }),
   inputMarginView: castStyle.view({
     marginLeft: '4%',
+    backgroundColor: sharedColors.secondary,
   }),
   iconBorderFixView: castStyle.view({
     overflow: 'hidden',

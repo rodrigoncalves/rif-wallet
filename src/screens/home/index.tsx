@@ -305,7 +305,7 @@ const styles = StyleSheet.create({
   }),
   container: castStyle.view({
     flex: 1,
-    backgroundColor: sharedColors.black,
+    backgroundColor: sharedColors.secondary,
   }),
   text: castStyle.text({
     textAlign: 'center',

@@ -52,7 +52,7 @@ enum TestID {
 export const TokenBalance = ({
   firstValue,
   secondValue,
-  color = sharedColors.black,
+  color = sharedColors.secondary,
   hide = false,
   editable = false,
   error,
