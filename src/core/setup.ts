@@ -1,7 +1,9 @@
 import axios from 'axios'
 import { AbiEnhancer } from '@rsksmart/rif-wallet-abi-enhancer'
 import mainnetContracts from '@rsksmart/rsk-contract-metadata'
-import testnetContracts from '@rsksmart/rsk-testnet-contract-metadata'
+import testnetContracts, {
+  ITokenMetadata,
+} from '@rsksmart/rsk-testnet-contract-metadata'
 import Resolver from '@rsksmart/rns-resolver.js'
 
 import { ITokenWithoutLogo } from 'store/slices/balancesSlice/types'
@@ -44,12 +46,21 @@ const defaultMainnetTokens: ITokenWithoutLogo[] = Object.keys(mainnetContracts)
       usdBalance: 0,
     }
   })
-const defaultTestnetTokens: ITokenWithoutLogo[] = Object.keys(testnetContracts)
+
+const testnetJesseToken: ITokenMetadata = {
+  '0xec64c6ab68d4d17864fc2caee8768a54b1dc73c0': {
+    name: 'Jesse Coin',
+    symbol: 'JESSE',
+    decimals: 2,
+  },
+}
+const testnetTokens = { ...testnetContracts, ...testnetJesseToken }
+const defaultTestnetTokens: ITokenWithoutLogo[] = Object.keys(testnetTokens)
   .filter(address =>
-    ['RDOC', 'tRIF', 'USDRIF'].includes(testnetContracts[address].symbol),
+    ['RDOC', 'tRIF', 'USDRIF', 'JESSE'].includes(testnetTokens[address].symbol),
   )
   .map(address => {
-    const { decimals, name, symbol } = testnetContracts[address]
+    const { decimals, name, symbol } = testnetTokens[address]
     return {
       decimals,
       name,

@@ -131,6 +131,8 @@ export const getTransparentIconSource = (
     return undefined
   }
   switch (symbol.toUpperCase()) {
+    case 'JESSE':
+      return require('./../../images/jesse.png')
     case 'RBTC':
     case 'TRBTC':
       return require('../../images/rbtc-transparent.png')
@@ -160,6 +162,8 @@ export const getIconSource = (
     return undefined
   }
   switch (symbol.toUpperCase()) {
+    case 'JESSE':
+      return require('../../images/jesse.png')
     case 'RBTC':
     case 'TRBTC':
       return require('../../images/rbtc.png')
