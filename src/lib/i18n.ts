@@ -108,7 +108,7 @@ const resources = {
       initial_screen_button_create: 'Create a wallet',
       initial_screen_button_import: 'Import existing wallet',
       initial_screen_welcome_footer:
-        'Welcome to RIF Wallet - a smart wallet with intuitive UX. Create your profile now.',
+        'Welcome to NEW-RIF Wallet - a smart wallet with intuitive UX. Create your profile now.',
       header_import_wallet: 'Import wallet',
       header_enter_your_phrase: 'Enter your phrase',
       header_phrase_correct: 'Phrase is correct!',
@@ -323,9 +323,9 @@ const resources = {
       pin_screen_header_title: 'PIN',
       pin_screen_wrong_pin: 'Wrong PIN',
       pin_settings_open_keyboard_btn: 'Open Keyboard',
-      wallet_deploy_title: 'Deploy RIF wallet',
+      wallet_deploy_title: 'Deploy NEW-RIF wallet',
       wallet_deploy_desc1:
-        'RIF wallet is a smart contract and because of this, it needs to be deployed in the blockchain.',
+        'NEW-RIF wallet is a smart contract and because of this, it needs to be deployed in the blockchain.',
       wallet_deploy_desc2:
         'This deployment makes it possible for you to transfer funds and interact with any web3 dApp.',
       wallet_deploy_wallet_deployed: 'Your smart wallet has been deployed!',
@@ -371,7 +371,7 @@ const resources = {
       android_qr_loading_camera: 'Loading camera',
       offline_screen_title: 'Ops! You are offline.',
       offline_screen_description_1:
-        'RIF Wallet needs an internet connection to work properly.',
+        'NEW-RIF Wallet needs an internet connection to work properly.',
       offline_screen_description_2:
         'Please check your connection and try again.',
       dapps_requirements_not_met:
@@ -388,7 +388,7 @@ const resources = {
       popup_message_rns:
         'Register your username to allow others to send you funds without worrying about mistyping or inputting wrong address',
       popup_link_text: 'Get username here',
-      wallet_deployment_label: 'Rif Wallet Deployment',
+      wallet_deployment_label: 'NEW-Rif Wallet Deployment',
       wallet_backup_title: 'Warning!',
       wallet_backup_message:
         'We have disabled the ability to take a picture of the mnemonic because it is important that you keep it private. Please write it down instead',

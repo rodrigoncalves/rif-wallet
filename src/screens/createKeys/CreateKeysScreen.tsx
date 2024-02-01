@@ -29,7 +29,7 @@ export const CreateKeysScreen = ({
         resizeMode={'cover'}
       />
       <View style={styles.rifLogoContainer}>
-        <RifLogo />
+        {/* <RifLogo /> */}
         <Typography style={styles.rifLogoText} type={'h1'}>
           {t('initial_screen_title')}
         </Typography>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     left: 30,
   }),
   rifLogoText: castStyle.text({
-    fontWeight: '300',
+    fontWeight: '500',
     fontSize: 28,
     color: sharedColors.black,
   }),
@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
     lineHeight: 15.6,
     bottom: WINDOW_HEIGHT * 0.26,
     left: 24,
+    color: sharedColors.white,
   }),
   importWalletButton: castStyle.view({
     marginTop: 8,
